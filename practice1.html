@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+ <h1>
+  JS Practice
+ </h1>
+  <h2>
+   1. Print all even numbers from 0-10
+  </h2>
+   <p id = "printed"></p>
+ <script>
+  function EvenPrinter(x,y) {
+   let printArray = [];
+   for (i = x; i <= y/2; i++) {
+    printArray.push(i*2);
+    document.getElementById('printed').innerHTML = printArray;
+   } return printArray;
+  } 
+
+  EvenPrinter(1,10);
+  
+ </script>
+ <h2>
+   2. Print a table containing multiplication tables
+ </h2>
+  <p id = "multiplied"></p>
+   <script>
+    function TimesTable(x) {
+     let printArray = [];
+     for (i = 1; i <= 20; i++) {
+      printArray.push(i*x);
+     }
+      console.log(printArray);
+      document.getElementById('multiplied').innerHTML = `${x} ||  ${printArray}`;
+       return printArray;
+    }
+       
+   TimesTable(3);
+
+  </script>
+
+  <h2>3. Create a length converter function</h2>
+
+
+  <h2>4. Calculate the sum of numbers within an array</h2>
+
+
+  <h2>5. Create a function that reverses an array</h2>
+
+
+  <h2>6. Sort an array from lowest to highest</h2>
+
+
+  <h2>7. Create a function that filters out negative numbers</h2>
+
+
+  <h2>8. Remove the spaces found in a string</h2>
+
+
+  <h2>9. Return a Boolean if a number is divisible by 10</h2>
+
+  
+  <h2>10. Return the number of vowels in a string</h2>
+
+
+</html>
