@@ -38,7 +38,17 @@
 
   </script>
 
-  <h2>3. Create a length converter function</h2>
+  <h2>3. Create a kilometers to miles converter function</h2>
+   <p id="lengthConversion"></p>
+   <script>
+    function KilometerToMile (x) {
+     let y = x*.621371;
+      return document.getElementById('lengthConversion').innerHTML = `${x} kilometers is ${y} miles.`
+    }
+
+    KilometerToMile(5);
+    //can easily add an input to this and others with an HTML input
+   </script>
 
 
   <h2>4. Calculate the sum of numbers within an array</h2>
