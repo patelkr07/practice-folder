@@ -68,7 +68,20 @@
     </script>
 
   <h2>5. Create a function that reverses an array</h2>
+    <p id="reversedArray"></p>
+    <script>
+      let arrayForward = ['H','E','L','L','O'];
 
+      function ArrayReverse (forward) {
+        let reversed = [];
+          for (let i = forward.length - 1; i >= 0; i--) {
+           reversed.push(forward[i]);
+          } document.getElementById('reversedArray').innerHTML = `${forward} backwards is ${reversed}`;
+      }
+
+      ArrayReverse(arrayForward);
+
+    </script>
 
   <h2>6. Sort an array from lowest to highest</h2>
 
