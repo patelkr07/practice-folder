@@ -84,6 +84,38 @@
     </script>
 
   <h2>6. Sort an array from lowest to highest</h2>
+    <p id="arraySorter"></p>
+      <script>
+        
+        let arrayRandom = [4,2,3,11,1,28,9,8];
+        
+        let arrayPerpetual = [...arrayRandom];
+
+        function ArraySorter(random) {
+          let sorted = [];
+          console.log(random);
+          for (let i = random.length; i>=0; i--) {
+            if (random.length > 0) {
+          let x = Math.min(...random);
+          let y = random.indexOf(x);
+           if (y > -1) {
+              console.log(y);
+              random.splice(y,1);
+              sorted.push(x);
+            }
+            
+          }
+          console.log(random);
+          console.log(sorted);
+          
+          } 
+          document.getElementById('arraySorter').innerHTML = `The reverse of the array   ${arrayPerpetual}  is  ${sorted}`;
+        };
+         
+        ArraySorter(arrayRandom);
+           
+            
+      </script>
 
 
   <h2>7. Create a function that filters out negative numbers</h2>
