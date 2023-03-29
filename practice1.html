@@ -141,6 +141,16 @@
 
 
   <h2>8. Remove the spaces found in a string</h2>
+			<p id="stringNoSpace"></p>
+
+			<script>
+				let string1 = "The quick brown fox jumped over the lazy dog.";
+				let string2 = string1.replaceAll(" ","");
+
+				document.getElementById('stringNoSpace').innerHTML = `The sentence: "${string1}" with no spaces would be: "${string2}"`;
+
+			</script>
+     
 
 
   <h2>9. Return a Boolean if a number is divisible by 10</h2>
