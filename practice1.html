@@ -94,7 +94,7 @@
         function ArraySorter(random) {
           let sorted = [];
           console.log(random);
-          for (let i = random.length; i>=0; i--) {
+          for (let i = random.length; i >= 0; i--) {
             if (random.length > 0) {
           let x = Math.min(...random);
           let y = random.indexOf(x);
@@ -119,6 +119,25 @@
 
 
   <h2>7. Create a function that filters out negative numbers</h2>
+   <p id="negFilter"></p>
+      <script>
+       let negativeArray = [3,-5,8,-4,88,-99];
+       let initialNegativeArray = [...negativeArray];
+
+        function negRemover(negArray) {
+         for (i = 0; i <= negArray.length; i++) {
+          let arrayObject = negArray[i];
+          let arrayObjectIndex = negArray.indexOf(arrayObject);
+          if ((arrayObject * -1) > 0 ) {
+           negArray.splice(arrayObjectIndex, 1)
+            }
+        } console.log(negArray);
+          document.getElementById('negFilter').innerHTML = `If we take the negative numbers out of the array: ${initialNegativeArray}, we are left with the array: ${negativeArray}.`;
+       }
+
+       negRemover(negativeArray);
+
+      </script>
 
 
   <h2>8. Remove the spaces found in a string</h2>
