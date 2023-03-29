@@ -153,7 +153,27 @@
      
 
 
-  <h2>9. Return a Boolean if a number is divisible by 10</h2>
+  <h2>9. Check if a number is divisible by 10</h2>
+			<p id="xDivisibleBy10"></p>
+			<p id="yDivisibleBy10"></p>
+				<script>
+					let xDiv = 6;
+					let yDiv = 20;
+
+					
+					if (xDiv % 10 == 0) {
+						document.getElementById('xDivisibleBy10').innerHTML = `${xDiv} is divisible by 10`;
+					} else {
+						document.getElementById('xDivisibleBy10').innerHTML = `${xDiv} is not divisible by 10`;
+					}
+
+					if (yDiv % 10 == 0) {
+						document.getElementById('yDivisibleBy10').innerHTML = `${yDiv} is divisible by 10`;
+					} else {
+						document.getElementById('yDivisibleBy10').innerHTML = `${yDiv} is not divisible by 10`;
+					}
+
+				</script>
 
   
   <h2>10. Return the number of vowels in a string</h2>
