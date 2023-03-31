@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <h1>Arrow Functions Practice</h1>
+  <script>
+   const numbers = [
+    1,
+    2,
+    3,
+    4,
+    5
+   ];
+
+   // console.log(numbers);
+
+   // function Multiplier(x) {
+   //  let numbers2 = [];
+   //   for (let i = 0; i < x.length; i++) {
+   //    numbers2.push(x[i]*2)
+   //   } return console.log(numbers2);
+   // }
+
+   // Multiplier(numbers);
+
+   //The above is one way of doing it. How would we do this using arrow functions?
+
+   const numbers3 = numbers.map(x => x*2);
+
+   console.log(numbers3);
+
+   //another example of Map below
+
+   var a = [
+    "We're up all night 'til the sun",
+    "We're up all night to get some",
+    "We're up all night for good fun",
+    "We're up all night to get lucky"
+   ]
+
+   var a2 = a.map(function(s){ return s.length});
+
+   var a3 = a.map( s => s.length );
+
+  
+   console.log(a2);
+   console.log(a3);
+
+   //a2 and a3 are the same
+   
+
+
+  </script>
+</html>

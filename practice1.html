@@ -177,7 +177,28 @@
 
   
   <h2>10. Return the number of vowels in a string</h2>
+			<p id="vowelString1"></p>
+      <p id="vowelString2"></p>
 
+				<script>
+					let vowelString1 = "Hi, what is your name?";
+					let vowelString2 = "My name is Chanticleer the Second";
+      			
+          var vowelsCountedArray1 = [...vowelString1].filter(x => x == "a" || x == "e" || x == "i" || x == "o" || x == "u");
+
+          var vowelsCountedArray2 = [...vowelString2].filter(x => x == "a" || x == "e" || x == "i" || x == "o" || x == "u");
+
+          var vowelsCounted1 = vowelsCountedArray1.length;
+          var vowelsCounted2 = vowelsCountedArray2.length;
+
+          console.log(vowelsCounted1);
+          console.log(vowelsCounted2);
+          
+          document.getElementById('vowelString1').innerHTML = `"${vowelString1}" has ${vowelsCounted1} vowels`;
+
+          document.getElementById('vowelString2').innerHTML = `"${vowelString2}" has ${vowelsCounted2} vowels`;
+         
+          
+				</script>
 
 </html>
-
