@@ -109,7 +109,7 @@
           console.log(sorted);
           
           } 
-          document.getElementById('arraySorter').innerHTML = `The reverse of the array   ${arrayPerpetual}  is  ${sorted}`;
+          document.getElementById('arraySorter').innerHTML = `The array   ${arrayPerpetual}  when sorted from least to greatest is:  ${sorted}`;
         };
          
         ArraySorter(arrayRandom);
@@ -194,11 +194,44 @@
           console.log(vowelsCounted1);
           console.log(vowelsCounted2);
           
-          document.getElementById('vowelString1').innerHTML = `"${vowelString1}" has ${vowelsCounted1} vowels`;
+          document.getElementById('vowelString1').innerHTML = `"${vowelString1}" has ${vowelsCounted1} vowels.`;
 
-          document.getElementById('vowelString2').innerHTML = `"${vowelString2}" has ${vowelsCounted2} vowels`;
-         
-          
+          document.getElementById('vowelString2').innerHTML = `"${vowelString2}" has ${vowelsCounted2} vowels.`;
+                   
 				</script>
+
+  <h2>11. Return the number of vowels in a string without using arrow functions</h2>
+   <p id="noArrow1"></p>
+   <p id="noArrow2"></p>
+    
+    <script>
+     noArrowString1 = "What's your favorite sport?";
+     
+     noArrowString2 = "What is your favorite place to travel to?";
+
+      function GetVowels(x) {
+       let vowelCount = 0;
+       let voweled = [...x];
+       for (i = 0; i < voweled.length; i++) {
+        if (voweled[i] === "a" ||
+            voweled[i] === "e" ||
+            voweled[i] === "i" ||
+            voweled[i] === "o" ||
+            voweled[i] === "u" ) {
+         vowelCount = vowelCount + 1;
+        }
+       } return vowelCount;
+      }
+          
+     console.log(GetVowels(noArrowString1));
+     console.log(GetVowels(noArrowString2));
+
+     let noArrowVowels1 = GetVowels(noArrowString1);
+     let noArrowVowels2 = GetVowels(noArrowString2);
+
+     document.getElementById('noArrow1').innerHTML = `"${noArrowString1}" has ${noArrowVowels1} vowels.`
+
+     document.getElementById('noArrow2').innerHTML = `"${noArrowString2}" has ${noArrowVowels2} vowels.`
+   </script>
 
 </html>
